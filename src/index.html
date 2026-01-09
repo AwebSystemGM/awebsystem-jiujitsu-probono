@@ -1,13 +1,738 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
-    <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon">
-    <title>Mestrinho Team</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mestrinho Team - Transformando vidas através do Jiu-Jitsu nas periferias. Arte suave com propósito social."
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="shortcut icon" href="img/icon/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Mestrinho Team | Jiu-Jitsu Social</title>
+  </head>
+  <body class="font-sans scroll-smooth">
+    <main>
+      <!-- Header/Navigation -->
+      <header class="relative h-screen overflow-hidden">
+        <nav
+          class="absolute top-0 left-0 w-full z-30 bg-gradient-to-b from-black/90 to-transparent py-6 transition-all duration-300"
+        >
+          <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center space-x-3">
+              <img
+                class="w-16 h-16 object-contain"
+                src="img/Logo-marca/Marca_350.png"
+                alt="Mestrinho Team Logo"
+              />
+              <div class="hidden md:block">
+                <h2 class="text-white font-bold text-xl tracking-wide">
+                  MESTRINHO TEAM
+                </h2>
+                <p class="text-red-500 text-xs font-medium">JIU-JITSU SOCIAL</p>
+              </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden lg:flex gap-10 text-white font-medium">
+              <li>
+                <a href="#home" class="relative group py-2">
+                  <span
+                    class="group-hover:text-red-500 transition-colors duration-300"
+                    >INÍCIO</span
+                  >
+                  <span
+                    class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a href="#missao" class="relative group py-2">
+                  <span
+                    class="group-hover:text-red-500 transition-colors duration-300"
+                    >NOSSA MISSÃO</span
+                  >
+                  <span
+                    class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a href="#galeria" class="relative group py-2">
+                  <span
+                    class="group-hover:text-red-500 transition-colors duration-300"
+                    >GALERIA</span
+                  >
+                  <span
+                    class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a href="#contato" class="relative group py-2">
+                  <span
+                    class="group-hover:text-red-500 transition-colors duration-300"
+                    >AJUDAR</span
+                  >
+                  <span
+                    class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"
+                  ></span>
+                </a>
+              </li>
+              <li>
+                <a href="#patrocinadores" class="relative group py-2">
+                  <span
+                    class="group-hover:text-red-500 transition-colors duration-300"
+                    >PATROCINADORES</span
+                  >
+                  <span
+                    class="absolute bottom-0 left-0 w-0 h-0.5 bg-red-500 group-hover:w-full transition-all duration-300"
+                  ></span>
+                </a>
+              </li>
+            </ul>
+
+            <!-- CTA & Social -->
+            <div class="flex items-center gap-6">
+              <a
+                href="https://www.instagram.com/mestrinho_team/"
+                class="text-white hover:text-fuchsia-400 transition-colors duration-300"
+              >
+                <i class="fa-brands fa-instagram text-2xl"></i>
+              </a>
+              <a
+                href="#contato"
+                class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg"
+              >
+                DOAR
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div
+          id="home"
+          class="relative z-20 h-[80vh] flex flex-col justify-center items-center text-center px-4 mt-20"
+        >
+          <div class="mb-6">
+            <img
+              class="w-40 md:w-56 mx-auto mb-6 filter drop-shadow-2xl"
+              src="img/Logo-marca/Marca_350.png"
+              alt="Mestrinho Team"
+            />
+          </div>
+
+          <div class="space-y-3 mb-10">
+            <h1
+              class="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-tight"
+            >
+              <span class="text-white">JIU-JITSU</span>
+              <span class="text-red-500"> PRA TODOS</span>
+            </h1>
+
+            <div class="h-1 w-28 bg-red-600 mx-auto"></div>
+
+            <p class="text-white text-lg md:text-xl font-light italic mt-3">
+              Transformando vidas no tatame e fora dele
+            </p>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-4">
+            <a
+              href="#missao"
+              class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 shadow-xl text-base md:text-lg"
+            >
+              CONHEÇA NOSSA MISSÃO
+            </a>
+            <a
+              href="#galeria"
+              class="bg-transparent border-2 border-white hover:bg-white/10 text-white font-bold py-3 px-8 rounded-lg transition duration-300 text-base md:text-lg"
+            >
+              VER HISTÓRIAS DE TRANSFORMAÇÃO
+            </a>
+          </div>
+
+          <div
+            class="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce"
+          >
+            <a href="#missao"
+              ><i class="fa-solid fa-chevron-down text-white text-xl"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Video Background -->
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        >
+          <source
+            src="video/WhatsApp Video 2025-12-12 at 11.14.20 PM.mp4"
+            type="video/mp4"
+          />
+        </video>
+
+        <!-- Gradient Overlay -->
+        <div
+          class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black via-black/60 to-black/30 -z-10"
+        ></div>
+      </header>
+
+      <!-- Nossa Missão Section -->
+      <section
+        id="missao"
+        class="py-24 bg-gradient-to-b from-gray-900 to-black relative overflow-hidden"
+      >
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+              <span class="text-red-500">//</span> NOSSA MISSÃO
+            </h2>
+            <div class="h-1 w-24 bg-red-600 mx-auto mb-8"></div>
+            <p class="text-gray-300 text-xl max-w-3xl mx-auto leading-relaxed">
+              Levar o Jiu-Jitsu como ferramenta de transformação social para as
+              periferias, provando que a arte suave pode mudar destinos.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+            <div
+              class="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300"
+            >
+              <div class="text-red-500 text-4xl mb-6">
+                <i class="fas fa-fist-raised"></i>
+              </div>
+              <h3 class="text-white text-xl font-bold mb-4">RESILIÊNCIA</h3>
+              <p class="text-gray-400">
+                Ensinamos que cair faz parte, mas levantar é obrigação. Nas
+                periferias, essa lição salva vidas.
+              </p>
+            </div>
+
+            <div
+              class="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300"
+            >
+              <div class="text-red-500 text-4xl mb-6">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <h3 class="text-white text-xl font-bold mb-4">COMUNIDADE</h3>
+              <p class="text-gray-400">
+                O tatame como espaço seguro onde todos são iguais, independente
+                de CEP ou condição social.
+              </p>
+            </div>
+
+            <div
+              class="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300"
+            >
+              <div class="text-red-500 text-4xl mb-6">
+                <i class="fas fa-medal"></i>
+              </div>
+              <h3 class="text-white text-xl font-bold mb-4">OPORTUNIDADE</h3>
+              <p class="text-gray-400">
+                Revelamos campeões dentro e fora dos campeonatos. O tatame como
+                ponte para um futuro melhor.
+              </p>
+            </div>
+
+            <div
+              class="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300"
+            >
+              <div class="text-red-500 text-4xl mb-6">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3 class="text-white text-xl font-bold mb-4">VALORES</h3>
+              <p class="text-gray-400">
+                Respeito, disciplina e humildade não são apenas palavras no
+                kimono - são nosso código de conduta.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quote -->
+          <div class="mt-24 text-center max-w-4xl mx-auto">
+            <div class="text-red-500 text-6xl mb-4">"</div>
+            <p class="text-white text-2xl italic mb-8">
+              O Jiu-Jitsu não escolhe endereço. Nosso dojô é a quebrada, nosso
+              tatame é o mundo, e nosso maior troféu é ver uma criança da
+              comunidade subindo no pódio da vida.
+            </p>
+            <div class="text-white font-bold">- Professor Mestrinho</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galeria Section -->
+      <section
+        id="galeria"
+        class="py-24 bg-gradient-to-b from-black to-gray-900"
+      >
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+              <span class="text-red-500">//</span> GALERIA DE TRANSFORMAÇÃO
+            </h2>
+            <div class="h-1 w-24 bg-red-600 mx-auto mb-8"></div>
+            <p class="text-gray-300 text-xl max-w-3xl mx-auto">
+              Momentos que comprovam: o tatame não treina apenas corpos, treina
+              caráter
+            </p>
+          </div>
+
+          <!-- Grid de Fotos -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+              class="relative group overflow-hidden rounded-2xl border border-amber-600"
+            >
+              <!-- Imagem real das crianças -->
+              <div class="h-64 overflow-hidden">
+                <img
+                  src="img/img-tatame/Primeiro passos kifs.jpeg"
+                  alt="Crianças praticando no projeto Mestrinho Team"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+
+              <!-- Overlay no hover -->
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-6"
+              >
+                <div
+                  class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+                >
+                  <h4 class="font-bold text-lg mb-2">Aula na Comunidade</h4>
+                  <p class="text-sm text-gray-300">
+                    Crianças aprendendo os primeiros movimentos
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden rounded-2xl border border-red-600"
+            >
+              <!-- Imagem real do pódio/conquista -->
+              <div class="h-64 overflow-hidden">
+                <img
+                  src="img/img-tatame/Angelica juveniu.jpeg"
+                  alt="Aluno do projeto Mestrinho Team comemorando conquista"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+
+              <!-- Overlay no hover -->
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-6"
+              >
+                <div
+                  class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+                >
+                  <h4 class="font-bold text-lg mb-2">Primeiro Pódio</h4>
+                  <p class="text-sm text-gray-300">
+                    Aluno da comunidade conquista medalha
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative group overflow-hidden rounded-2xl border border-blue-600"
+            >
+              <!-- Imagem real do treino coletivo -->
+              <div class="h-64 overflow-hidden">
+                <img
+                  src="img/img-tatame/Treino coletivo juveniu.jpeg"
+                  alt="Treino coletivo do projeto Mestrinho Team - Irmandade no tatame"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+
+              <!-- Overlay no hover -->
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-6"
+              >
+                <div
+                  class="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+                >
+                  <h4 class="font-bold text-lg mb-2">Treino Coletivo</h4>
+                  <p class="text-sm text-gray-300">Irmandade no tatame</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vídeos -->
+          <div class="mt-12 grid md:grid-cols-2 gap-6">
+            <!-- Documentário: Juvenis - Vertical (mesmo estilo do depoimento) -->
+            <div class="bg-gray-900/50 p-6 rounded-2xl">
+              <div
+                class="h-[500px] bg-black rounded-lg overflow-hidden mb-4 relative group"
+              >
+                <div class="flex items-center justify-center h-full">
+                  <video
+                    class="h-full max-h-[500px]"
+                    controls
+                    preload="metadata"
+                    style="max-width: 100%; object-fit: contain"
+                    poster="video/Capa de video juvenil.jpeg"
+                  >
+                    <source
+                      src="video/Depoimento juveniu .mp4"
+                      type="video/mp4"
+                    />
+                    Seu navegador não suporta o elemento de vídeo.
+                  </video>
+                </div>
+
+                <!-- Overlay de play -->
+                <div
+                  class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-100 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none"
+                >
+                  <div class="relative">
+                    <div
+                      class="absolute inset-0 bg-red-500 rounded-full animate-ping opacity-50"
+                    ></div>
+                    <i
+                      class="fas fa-play-circle text-red-500 text-6xl relative"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <h4 class="text-white font-bold text-lg mb-2">
+                Documentário: Juvenis
+              </h4>
+              <p class="text-gray-400">
+                A trajetória de jovens transformados pelo esporte
+              </p>
+            </div>
+
+            <!-- Depoimento Mestrinho - Vertical -->
+            <div class="bg-gray-900/50 p-6 rounded-2xl">
+              <div
+                class="h-[500px] bg-black rounded-lg overflow-hidden mb-4 relative group"
+              >
+                <div class="flex items-center justify-center h-full">
+                  <video
+                    class="h-full max-h-[500px]"
+                    controls
+                    preload="metadata"
+                    style="max-width: 100%; object-fit: contain"
+                  >
+                    <source
+                      src="video/Depoimento mestrinho.mp4"
+                      type="video/mp4"
+                    />
+                    Seu navegador não suporta o elemento de vídeo.
+                  </video>
+                </div>
+
+                <!-- Overlay de play -->
+                <div
+                  class="absolute inset-0 flex items-center justify-center bg-black/40 opacity-100 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none"
+                >
+                  <div class="relative">
+                    <div
+                      class="absolute inset-0 bg-red-500 rounded-full animate-ping opacity-50"
+                    ></div>
+                    <i
+                      class="fas fa-play-circle text-red-500 text-6xl relative"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <h4 class="text-white font-bold text-lg mb-2">
+                Depoimentos: Mestrinho Team
+              </h4>
+              <p class="text-gray-400">O impacto do projeto nas famílias</p>
+            </div>
+          </div>
+        </div>
+        <!--VER MAIS (Fazer página e alimentar)-->
+        <div class="flex flex-col md:flex-row gap-">
+          <a
+            href=""
+            class="bg-red-600 hover:bg-red-700 mx-auto text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105 shadow-xl text-base md:text-lg"
+          >
+            VER MAIS
+          </a>
+        </div>
+      </section>
+
+      <!-- Contato/Junte-se Section -->
+      <section id="contato" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+              <span class="text-red-500">//</span> QUER NOS AJUDAR?
+            </h2>
+            <div class="h-1 w-24 bg-red-600 mx-auto mb-8"></div>
+            <p class="text-gray-300 text-xl max-w-3xl mx-auto">
+              Sua contribuição transforma vidas. Entre em contato e faça parte
+              desta missão.
+            </p>
+          </div>
+
+          <div
+            class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 px-4 lg:px-8 items-stretch"
+          >
+            <!-- Bloco: PRECISAMOS DE -->
+            <div class="h-full">
+              <div
+                class="bg-gradient-to-r from-gray-900 to-black p-8 rounded-2xl border border-gray-800 h-full flex flex-col justify-between"
+              >
+                <div>
+                  <h4
+                    class="text-white text-xl font-bold mb-6 flex items-center gap-3"
+                  >
+                    <i class="fas fa-hands-helping text-red-500"></i>
+                    PRECISAMOS DE:
+                  </h4>
+
+                  <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div
+                      class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition"
+                    >
+                      <i class="fas fa-tshirt text-red-500 text-2xl mb-2"></i>
+                      <p class="text-white text-sm font-medium">Kimonos</p>
+                      <p class="text-gray-400 text-xs mt-1">
+                        Todos os tamanhos
+                      </p>
+                    </div>
+
+                    <div
+                      class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition"
+                    >
+                      <i
+                        class="fas fa-dumbbell text-blue-500 text-2xl mb-2"
+                      ></i>
+                      <p class="text-white text-sm font-medium">Equipamentos</p>
+                      <p class="text-gray-400 text-xs mt-1">
+                        Proteções, faixas
+                      </p>
+                    </div>
+
+                    <div
+                      class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition"
+                    >
+                      <i class="fas fa-square text-green-500 text-2xl mb-2"></i>
+                      <p class="text-white text-sm font-medium">Tatames</p>
+                      <p class="text-gray-400 text-xs mt-1">
+                        Para treinos seguros
+                      </p>
+                    </div>
+
+                    <div
+                      class="bg-gray-800 p-4 rounded-lg text-center hover:bg-gray-700 transition"
+                    >
+                      <i
+                        class="fas fa-hand-holding-usd text-yellow-500 text-2xl mb-2"
+                      ></i>
+                      <p class="text-white text-sm font-medium">Recursos</p>
+                      <p class="text-gray-400 text-xs mt-1">Para manutenção</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Botões -->
+                <div class="grid grid-cols-2 gap-4 mt-6">
+                  <a
+                    href="https://wa.me/558399108543?text=Oss!%20Olá%20mestrinho,%20quero%20ajudar%20no%20projeto%20social"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-4 rounded-lg transition duration-300 transform hover:scale-105"
+                  >
+                    <i class="fab fa-whatsapp text-xl"></i>
+                    WhatsApp
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/mestrinho_team/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center justify-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-4 px-4 rounded-lg transition duration-300 transform hover:scale-105"
+                  >
+                    <i class="fab fa-instagram text-xl"></i>
+                    Instagram
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bloco: INFORMAÇÕES -->
+            <div class="h-full">
+              <div
+                class="bg-gradient-to-r from-gray-900 to-black p-8 rounded-2xl border border-gray-800 h-full flex flex-col justify-between"
+              >
+                <div>
+                  <h4
+                    class="text-white text-xl font-bold mb-6 flex items-center gap-3"
+                  >
+                    <i class="fas fa-info-circle text-red-500"></i>
+                    INFORMAÇÕES
+                  </h4>
+
+                  <div class="space-y-6">
+                    <div class="flex items-start gap-3">
+                      <i class="fas fa-map-marker-alt text-red-500 mt-1"></i>
+                      <div>
+                        <p class="text-white font-medium">Onde atuamos</p>
+                        <p class="text-gray-400 text-sm">
+                          Comunidades periféricas da região <br />
+                          Cidade verde, condomínios canaã
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                      <i class="fas fa-clock text-red-500 mt-1"></i>
+                      <div>
+                        <p class="text-white font-medium">Aulas gratuitas</p>
+                        <p class="text-gray-400 text-sm">
+                          Turmas para crianças e jovens
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                      <i class="fas fa-users text-red-500 mt-1"></i>
+                      <div>
+                        <p class="text-white font-medium">Voluntários</p>
+                        <p class="text-gray-400 text-sm">
+                          Sempre precisamos de ajuda
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                      <i class="fas fa-handshake text-red-500 mt-1"></i>
+                      <div>
+                        <p class="text-white font-medium">Contato direto</p>
+                        <p class="text-gray-400 text-sm">
+                          Fale diretamente com o Mestre sobre doações
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Patrocinadores Section -->
+      <section
+        id="patrocinadores"
+        class="bg-gray-900 py-20 border-t border-gray-800"
+      >
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-14">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+              Patrocinadores Oficiais
+            </h2>
+            <div class="h-1 w-20 bg-red-600 mx-auto mb-6"></div>
+            <p class="text-gray-300 max-w-2xl mx-auto">
+              Empresas e parceiros que acreditam no nosso trabalho e nos ajudam
+              a transformar vidas
+            </p>
+          </div>
+
+          <div
+            class="flex flex-wrap justify-center items-center gap-10 md:gap-14"
+          >
+            <!-- AwebSystem -->
+            <a
+              href="https://www.instagram.com/aweb.system/"
+              target="_blank"
+              class="group flex flex-col items-center transition-transform hover:scale-105"
+            >
+              <div
+                class="w-48 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg mb-3"
+              >
+                <img
+                  src="img/pratocinios/AwebSystem.png"
+                  alt="AdevWeb"
+                  class="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <p
+                class="text-gray-300 text-sm group-hover:text-white transition"
+              >
+                AwebSystem
+              </p>
+            </a>
+
+            <!-- SHINKO SPORTS -->
+            <a
+              href="https://www.instagram.com/shinko__sports/"
+              target="_blank"
+              class="group flex flex-col items-center transition-transform hover:scale-105"
+            >
+              <div
+                class="w-48 h-32 bg-white rounded-xl flex items-center justify-center p-4 shadow-lg mb-3"
+              >
+                <img
+                  src="img/pratocinios/shinko.jpg"
+                  alt="Shinko Sports"
+                  class="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <p
+                class="text-gray-300 text-sm group-hover:text-white transition"
+              >
+                Shinko Sports
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-gray-900 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+              <img
+                class="w-20 mb-4"
+                src="img/Logo-marca/Marca_350.png"
+                alt="Mestrinho Team"
+              />
+              <p class="text-gray-400 text-sm">
+                Transformando vidas através do Jiu-Jitsu<br />
+                © 2025 Mestrinho Team - Todos os direitos reservados
+              </p>
+            </div>
+            <div class="text-center md:text-right">
+              <p class="text-white font-bold text-lg mb-2">
+                Deus em primeiro lugar
+              </p>
+              <p class="text-gray-400 text-sm">
+                Projeto Social sem fins lucrativos
+              </p>
+              <div class="mt-4">
+                <a
+                  href="https://www.instagram.com/p/DR61CNYkYTs/"
+                  class="inline-block text-white hover:text-fuchsia-400 transition"
+                >
+                  <i class="fab fa-instagram text-2xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
